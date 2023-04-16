@@ -19,7 +19,7 @@ const Banner = () => {
     },
   ];
   const prevSlide = () => {
-    setCurrentSlide(currentSlide < 1 ? banners.length : (prev) => prev - 1);
+    setCurrentSlide(currentSlide === 1 ? banners.length : (prev) => prev - 1);
   };
   const nextSlide = () => {
     setCurrentSlide(currentSlide === banners.length ? 1 : (prev) => prev + 1);
