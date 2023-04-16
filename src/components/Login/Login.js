@@ -40,7 +40,7 @@ export const Login = () => {
         }, 1000);
       })
       .catch((error) => {
-        console.log(error.message);
+        // console.log(error.message);
       });
   };
 
@@ -75,7 +75,7 @@ export const Login = () => {
       })
       .catch((error) => {
         // Hata oluşursa yapılacak işlemler
-        console.log(error.message);
+        // console.log(error.message);
       });
   };
 
@@ -91,7 +91,7 @@ export const Login = () => {
         resetValues();
       })
       .catch((error) => {
-        console.log(error.message);
+        // console.log(error.message);
       });
     setTimeout(() => {
       setLogin(true);

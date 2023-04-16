@@ -17,28 +17,28 @@ export const fetchAsyncCategories = createAsyncThunk(
       const sortedProducts = response.data.products.sort(
         (a, b) => a.price - b.price
       );
-      console.log(sortedProducts);
+      // console.log(sortedProducts);
       return sortedProducts;
     }
     if (sortBy === "highestPrice") {
       const sortedProducts = response.data.products.sort(
         (a, b) => b.price - a.price
       );
-      console.log(sortedProducts);
+      // console.log(sortedProducts);
       return sortedProducts;
     }
     if (sortBy === "A-Z") {
       const sortedProducts = response.data.products.sort((a, b) =>
         a.title.localeCompare(b.title)
       );
-      console.log(sortedProducts);
+      // console.log(sortedProducts);
       return { sortedProducts, sortBy };
     }
     if (sortBy === "Z-A") {
       const sortedProducts = response.data.products.sort((a, b) =>
         b.title.localeCompare(a.title)
       );
-      console.log(sortedProducts);
+      // console.log(sortedProducts);
       return sortedProducts;
     }
     if (brand) {

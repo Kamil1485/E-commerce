@@ -7,8 +7,9 @@ import { ToastContainer, toast } from "react-toastify";
 import { useSelector } from "react-redux";
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
+ // eslint-disable-next-line no-unused-vars
  const pricem=useSelector((state)=>state.filter.selectedPrice)
- console.log(pricem)
+//  console.log(pricem)
   const navigate = useNavigate();
 
   const handleNavigate = (title) => {

@@ -27,7 +27,7 @@ const Shop = () => {
   const selectedBrand=useSelector((state) => state.filter.selectedBrand);
   const selectedSortBy=useSelector((state) => state.filter.selectedSortBy);
   const selectedPrice=useSelector((state) => state.filter.selectedPrice);
-  console.log(selectedPrice)
+  // console.log(selectedPrice)
   const [searched, setSearched] = useState("");
   const [selected, setSelected] = useState("");
   const [page, setPage] = useState(1);
