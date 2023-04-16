@@ -1,0 +1,29 @@
+.singleCard {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.details_card {
+  width: 70%;
+}
+.total_container {
+  top: 100px;
+  right: 0;
+  padding: 4px;
+  border: 2px solid black;
+  width: 20%;
+  margin-right: 20px;
+  height: 70vh;
+}
+.total_payment {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .total_container {
+    width: 100vh;
+  }
+  .details_card {
+    width: 80vh;
+  }
+}

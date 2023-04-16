@@ -1,0 +1,50 @@
+tailwindcss
+redux-toolkit
+google-firebase
+react-stripe-checkout
+axios
+express
+react-icons
+ract-toastıfy
+
+//Format all files
+//npm install --global prettier
+terminal:prettier --write .
+
+//quick directory  
+mkdir components
+mkdir pages
+mkdir assets
+mkdir api
+veya mkdir components pages assets api
+
+//npm i axios
+npm install react-icons --save
+
+//products
+npm i react-router-dom
+
+//loading animasyonu
+npm install react-spinners
+
+//card-redux-store
+npm install @reduxjs/toolkit
+npm install @reduxjs/toolkit react-redux
+
+//toastify
+npm i react-toastify
+
+//verileri depolama ekran yenilemesiyle redux verileri siliniyor, localstoage da depolanabilir.Persist kütüphanesi redux ı localde depolar.
+npm i redux-persist //store.js ve app.js
+
+//login-register işlemlerini yönetme
+//npm i firebase
+
+//payment
+npm i react-stripe-checkout
+
+//veri depolama
+npm i @firebase/firestore
+
+//verileri async olarak yükleme
+npm i redux-thunk

@@ -1,0 +1,166 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background: #fff9f9;
+  color: black;
+  width: 100%;
+  top: 0;
+}
+.header_wrapper {
+  color: red;
+  font-size: 1.5rem;
+}
+.nav {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 24px;
+}
+.nav ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 24px;
+}
+.nav li {
+  display: flex;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.nav a:hover {
+  color: orange;
+}
+.card_count {
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  font-size: 24px;
+}
+.card_icon {
+  margin-top: 4px;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+.card_avatar {
+  margin-top: 4px;
+  cursor: pointer;
+  width: 250px;
+  background: #fff9f9;
+}
+.card_icon:hover {
+  color: orange;
+}
+
+.base_avatar {
+  width: auto;
+  font-size: 42px;
+  height: 45px;
+}
+.user_avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+.user_container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  height: 45px;
+}
+.user_title {
+  margin: 0;
+  width: auto;
+  font-family: Georgia, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.form_field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.form_field h2 {
+  margin-bottom: 16px;
+}
+
+.form_field div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form_field label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form_field input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.form_field button {
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form_field button:hover {
+  background-color: #555;
+}
+
+.profile_container {
+  display: block;
+}
+
+.active {
+  position: absolute;
+  top: 22px;
+  display: none;
+}
+.profile {
+  margin: 0;
+  font-size: 1.1rem;
+  height: 24px;
+}
+.profile_btn {
+  font-size: 1.1rem;
+  margin: 0;
+  margin-top: 3px;
+}
+.logo_container {
+  width: 100px;
+  height: 50px;
+}
+.logo {
+  width: 100px;
+  height: 50px;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card_avatar {
+    width: 100%;
+  }
+  .logo_container {
+    width: 100%;
+  }
+  .header_wrapper {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+}

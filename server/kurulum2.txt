@@ -1,0 +1,27 @@
+//backend bölümü 
+//npm i ve npm init --yes ile package-lock ve package.json dosyalarını yapılandır.
+//entry point: ile server dosyanı belirle
+// npm start ile server dosyasını calıstır.
+
+body-parser:gönderilen post datasını obje olarak yakalamamızı sağlayan bir modüldür.
+cors:bir kökende çalışan web uygulamasının, farklı bir kökende yer alan web uygulamasına erişim izni kontrolünü sağlayan mekanizmadır.
+dotenv:. env dosyası içerisinde oluşturulan değişkenleri process.env nesnesine otomatik aktarmaya yarayan kütüphane
+nodemon:NodeJS tabanlı uygulama geliştirirken dosyalarınızdaki değişiklikleri algılayıp otomatik olarak sunucuyu sizin için baştan başlatan bir araçtır.
+stripe:ödeme işleme platformu
+
+"dependencies":{
+        "body-parser":"^1.20.2",
+        "cors":"^2.8.5",
+        "dotenv":"^16.0.3",
+        "express":"^4.18.2",
+        "nodemon":"^2.0.20",
+        "stripe":"11.11.0"
+}
+bağımlılıkları kur // npm i
+
+ "scripts": {
+    "start":"nodemon server.js"
+},
+
+//1-server i calıstır npm start 
+//2-axios ile  kullanıcınn satın alma verilerini servera gönder

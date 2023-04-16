@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  backgronud: red;
+  height: 500px;
+  gap: 20px;
+}
+
+.details_image {
+  width: 100%;
+  height: 100%;
+}
+.left_side {
+  width: 40%;
+}
+.right_side {
+  backgronud: red;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product_price {
+  display: flex;
+  align-items: baseline;
+}
+
+.oldprice {
+  font-size: 12px;
+}
+
+.review {
+  margin-top: 40px;
+  display: flex;
+  gap: 4px;
+}
+.description {
+  margin-top: 40px;
+  font-size: 21px;
+}
+
+.card_item {
+  backgronud: grey;
+  border: none;
+  width: 20px;
+}
+.add_card {
+  display: flex;
+  gap: 5px;
+  border: 2px solid black;
+}
+
+.decrease {
+  backgronud: grey;
+  border: none;
+  width: 20px;
+  cursor: pointer;
+}
+.increase {
+  backgronud: grey;
+  border: none;
+  width: 20px;
+  cursor: pointer;
+}
+
+.add_container {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  bottom: 0px;
+}
+.add_btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Örnek bir yükseklik */
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .left_side {
+    width: 40%;
+  }
+  .right_side {
+    backgronud: red;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px solid red;
+  }
+}

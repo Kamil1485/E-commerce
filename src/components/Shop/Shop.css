@@ -1,0 +1,54 @@
+.searchedCard {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+select {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: black;
+  margin-right: 20px;
+  ht: px;
+}
+
+option {
+  color: black;
+  background-color: #f2f2f2;
+}
+
+option:hover {
+  background-color: #ddd;
+}
+
+button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+input {
+  width: 92%;
+  height: 30px;
+  font-size: 19px;
+  padding: 10px;
+  border: 4px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+

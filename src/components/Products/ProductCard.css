@@ -1,0 +1,66 @@
+.product_wrapper {
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.product_img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.product_img:hover {
+  transform: scale(1.01);
+}
+.product_title {
+  font-size: 1.4rem;
+  text-align: center;
+  color: red;
+  border-bottom: 4px solid purple;
+  box-shadow: 0 8px 4px 2px rgba(0, 0, 0, 0.4);
+}
+.product_price {
+  display: flex;
+  gap: 20px;
+}
+
+.oldprice {
+  text-decoration: line-through;
+  text-align: center;
+  color: red;
+}
+.price {
+  color: green;
+}
+.product_footer {
+  display: flex;
+  gap: 4px;
+}
+
+.add_cart {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.product_wrapper {
+  border: 2px solid;
+}
+.product_category {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.product_sale {
+  position: relative;
+}
+.sale {
+  position: absolute;
+  color: white;
+  border-radius: 4px;
+  top: 3px;
+  right: 0;
+  margin-right: 0;
+  background: black;
+  z-index: 5;
+}
