@@ -38,9 +38,10 @@ export const Login = () => {
         setTimeout(() => {
           navigate("/");
         }, 1000);
+    
       })
       .catch((error) => {
-        // console.log(error.message);
+        console.log(error.message);
       });
   };
 
@@ -58,7 +59,7 @@ export const Login = () => {
       .then((userCredential) => {
         // Kullanıcı giriş yaptıktan sonra yapılacak işlemler
         const user = userCredential.user;
-
+  
         dispatch(
           addUser({
             _id: user.uid,
@@ -75,7 +76,7 @@ export const Login = () => {
       })
       .catch((error) => {
         // Hata oluşursa yapılacak işlemler
-        // console.log(error.message);
+        console.log(error.message);
       });
   };
 
@@ -89,25 +90,16 @@ export const Login = () => {
         });
         toast.success("Sign Up Succesfully");
         resetValues();
+    
       })
       .catch((error) => {
-        // console.log(error.message);
+        console.log(error.message);
       });
     setTimeout(() => {
       setLogin(true);
     }, 1000);
   };
-  const handleCreateAccount = () => {
-    setLogin(false);
-    setEmail("");
-    setPassword("");
-    setUsername("");
-  };
-  const handleBackLogin = () => {
-    setLogin(true);
-    setEmail("");
-    setPassword("");
-  };
+
   return (
     <div className="login_container">
       <div>
@@ -146,8 +138,8 @@ export const Login = () => {
                   Sign In with Google
                 </button>
               </div>
-              <button onClick={handleCreateAccount}>
-                Don't have a Account create one?
+              <button onClick={() => setLogin(false)}>
+                Don't have a Account create one
               </button>
             </form>
           </div>
@@ -192,7 +184,7 @@ export const Login = () => {
               <button className="signup_btn" type="submit">
                 Sign Up
               </button>
-              <button onClick={handleBackLogin}>Back to Login</button>
+              <button onClick={() => setLogin(true)}>Back to Login</button>
             </form>
           </div>
         )}
